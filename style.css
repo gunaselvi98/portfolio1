@@ -162,16 +162,7 @@ section h1 {
     left: 0;
     background: #02a47f;
   }
-.about1 .bar1{
-    position: absolute;
-    width: 102px;
-    height: 2px;
-    left:50%;
-    top:148%;
-    transform: translate(-50%,-147%);
-    
-    border-bottom: 1px solid #02a47e6b;
-}
+
 .about1{
     background: url(images/night-sky.jpg);
     height:100vh;
