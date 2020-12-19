@@ -397,10 +397,20 @@ input{
     color: #FFEFBA;
     opacity: 1; /* Firefox */
   }
+input[type=text]{
+      color:#FFEFBA ;
+  }
+  input[type=email]{
+    color:#FFEFBA ;
+}
   
 form textarea{
     font-family: 'Montserrat'; 
+   
+        color:#FFEFBA ;
+   
 }
+
 form .submit{
     background:#bdb189;
     border-color: transparent;
