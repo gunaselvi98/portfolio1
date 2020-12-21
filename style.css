@@ -162,7 +162,16 @@ section h1 {
     left: 0;
     background: #02a47f;
   }
-
+.about1 .bar1{
+    position: absolute;
+    width: 102px;
+    height: 2px;
+    left:50%;
+    top:148%;
+    transform: translate(-50%,-147%);
+    
+    border-bottom: 1px solid #02a47e6b;
+}
 .about1{
     background: url(images/night-sky.jpg);
     height:100vh;
@@ -192,143 +201,59 @@ background-attachment:fixed;
     font-family: 'Montserrat';
    
 }
+.maincard{
+    min-height: 60vh;
+    
+}
 .container{
-    height:60vh;
-    display: flex;
-    align-items:center;
-    flex-direction: row;
-    justify-content: space-evenly;
-    cursor: pointer;
+   
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-flow: wrap;
+       
+ 
+}
+.card {
+    width: 20%;
+    height: 200%;
+    background: #fff;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    color:rgb(0, 0, 0);
+    transition: 0.3s;
+    
     
 }
-.main-container1 {
-    width: 25%;
-    height:50%;
-    transition: transform 1s ease-in-out;
-    transform-style:preserve-3d ;
-   
+.heading{
+    background-color: #FFEFBA;
+    border-radius: 10px 10px 0 0;
     
 }
-.main-container1 figure{
-    height:100%;
-    width:110%;
-    position: absolute;
-    box-shadow: 0 4px 8px 0 rgba(172, 153, 72, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.11);
-    border-radius: 5px;
-}
-.main-container1 .front1{background-image: linear-gradient(to right, #FFEFBA 0%, #ffffff 100%);
-    padding: 50px;
-   
-    
-    color:rgb(167, 137, 137);
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-   align-items: center;
-   flex-direction: column;
-   
-   
-}
-.main-container1:focus, 
-.main-container1:hover {
-    transform: rotateY(180deg);
-}
-.back1{
-    background-color: #fff;
-    transform: rotateY(180deg);
+.card .img{
     display: flex;
     align-items: center;
     justify-content: center;
+   
+}
+ 
+.card .front1 h1{
+    text-align: center;
+    line-height: 2rem;
     
-    
+}
+.card .front1 h2{
+    text-align: center;
+    line-height: 5px;
     
    
+
+}
+.card:hover{
+    transform: scale(1.05);
+  box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
 }
 
-.main-container2 {
-    width: 25%;
-    height:50%;
-    transition: transform 1s ease-in-out;
-   
-    transform-style:preserve-3d ;
-}
-.main-container2 figure{
-    height:100%;
-    width:110%;
-    position: absolute;
-    box-shadow: 0 4px 8px 0 rgba(172, 153, 72, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.11);
-    border-radius: 5px;
-}
-.main-container2 .front2{background-image: linear-gradient(to right, #FFEFBA 0%, #ffffff 100%);
-    
-    padding: 50px;
-   
-    
-    color:rgb(167, 137, 137);
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-   align-items: center;
-   flex-direction: column;
-   
-}
-.main-container2:focus, .main-container2:hover {
-    transform: rotateY(180deg);
-}
-.back2{
-    background-color: #fff;
-    transform: rotateY(180deg);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    
-    
-   
-}
-
-.main-container3 {
-    width: 25%;
-    height:50%;
-    transition: transform 1s ease-in-out;
-    transform-style:preserve-3d ;
-  
-}
-.main-container3 figure{
-    height:100%;
-    width:110%;
-    position: absolute;
-    box-shadow: 0 4px 8px 0 rgba(172, 153, 72, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.11);
-    border-radius: 5px;
-}
-.main-container3 .front3{background-image: linear-gradient(to right, #FFEFBA 0%, #ffffff 100%);
-    
-    padding: 50px;
-   
-    
-    color:rgb(167, 137, 137);
-    
-    display: flex;
-    justify-content: center;
-   align-items: center;
-   flex-direction: column;
-   
-}
-.main-container3:focus, 
-.main-container3:hover {
-    transform: rotateY(180deg);
-}
-.back3{
-    background-color: #fff;
-    transform: rotateY(180deg);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    
-    
-   
-}
 .contact{
     height: 100vh;
     font-family: 'Montserrat'; 
@@ -388,7 +313,7 @@ input{
     color: #FFEFBA;
     opacity: 1; /* Firefox */
   }
-input[type=text]{
+  input[type=text]{
       color:#FFEFBA ;
   }
   input[type=email]{
@@ -401,7 +326,6 @@ form textarea{
         color:#FFEFBA ;
    
 }
-
 form .submit{
     background:#bdb189;
     border-color: transparent;
@@ -478,7 +402,8 @@ footer{
     .nav-links.hide{
         display:none;
     }
-}
-  
+    .card{
+        width: 70%;
+    }
     
-
+}
